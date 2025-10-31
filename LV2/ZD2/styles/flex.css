@@ -78,33 +78,38 @@ main {
     margin: 10px;
     border-radius: 10px;
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    flex-direction: row-reverse;
 }
 
-main article, main aside {
+main article, aside {
     background-color: #f78733;
-    width: calc(82% - 5px); /* Changed from 50% - 10px to account for gap */
-    padding: 5px;
-    border-radius: 10px;
-    margin: 0;
 }
 
-main aside:nth-child(1) {
-    order: 2;
+main div:nth-child(1) {
+    display: flex;
+    flex-direction: column ;
+}
+
+main div:nth-child(2) {
+    display: flex;
+    flex-direction: column ;
+}
+
+div aside:nth-child(1) {
+    float: right;
     width: 300px;
     padding: 5px;
     border-radius: 10px;
 }
 
-main aside:nth-child(1) p {
+div aside:nth-child(1) p {
     width: 100%;
     height: 100%;
 }
 
-main aside:nth-child(2) {
-    
-    order: 4;
+div aside:nth-child(2) {
+    float: right;
+    clear: right;
     margin-top: 10px;
     margin-bottom: 10px;
     width: 300px;
@@ -112,35 +117,37 @@ main aside:nth-child(2) {
     border-radius: 10px;
 }
 
-main aside:nth-child(2) p {
+div aside:nth-child(2) p {
     width: 100%;
     height: 100%;
 }
 
-main article:nth-child(3) {
-    order: 1;
+div article:nth-child(1) {
     margin-top: 0px;
+    margin-right: 10px;
     padding: 5px;
     border-radius: 10px;
 }
 
-main article:nth-child(3) p, main article:nth-child(3) h2 {
+div article:nth-child(1) p, div article:nth-child(1) h2 {
     width: 100%;
 }
 
-main article:nth-child(4) {
-    order: 3;
+div article:nth-child(2) {
     margin-top: 10px;
+    margin-right: 10px;
     padding: 5px;
     border-radius: 10px;
 }
 
-main article:nth-child(4) p, main article:nth-child(4) h2 {
+div article:nth-child(2) p, div article:nth-child(2) h2 {
     width: 100%;
 }
 
 footer {
     display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     background-color: #fc4a1a;
     margin: 10px;
     padding: 5px;
@@ -151,9 +158,7 @@ footer {
 footer ul {
     width: auto;
     height: auto;
-    text-align: auto;
-    order: 1;
-    margin-left: auto;
+    text-align: center;
     list-style-type: none;
 }
 
@@ -178,5 +183,5 @@ footer p {
     height: 100%;
     line-height: 5.625em;
     text-align: left;
-    order: 0;
+    margin-bottom: 30px;
 }
