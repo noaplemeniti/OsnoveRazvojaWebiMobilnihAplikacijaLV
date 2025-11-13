@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="ToDo List" />
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="todoapp.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>To Do List!</h1>
+        <h2>Keep track of all your tasks.</h2>
+    </header>
+    <main>
+        <section class="task-list">
+            <ul id="tasks">
+                <!-- Tasks will be dynamically added here -->
+            </ul>
+        </section>
+    </main>
+</body>
+<footer>
+        <section class="task-adder">
+            <form id="todo-form">
+                <input type="text" id="todo-input" placeholder="Add a new task..." required />
+                <button type="submit">Add Task</button>
+            </form>
+            <ul id="todo-list"></ul>
+        </section>
+    </footer>
+</html>

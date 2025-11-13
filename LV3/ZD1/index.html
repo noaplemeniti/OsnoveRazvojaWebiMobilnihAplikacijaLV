@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="calculator.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class ="calculator_container">
+        <h1>Calculator</h1>
+        <input type="text" id="mathematical_expression" name="mathematical_expression"/>
+        <div class="calculator_buttons">
+            <button onclick="updateExpression('7')">7</button>
+            <button onclick="updateExpression('8')">8</button>
+            <button onclick="updateExpression('9')">9</button>
+            <button onclick="updateExpression('+')">+</button>
+            <button onclick="updateExpression('4')">4</button>
+            <button onclick="updateExpression('5')">5</button>
+            <button onclick="updateExpression('6')">6</button>
+            <button onclick="updateExpression('-')">-</button>
+            <button onclick="updateExpression('1')">1</button>
+            <button onclick="updateExpression('2')">2</button>
+            <button onclick="updateExpression('3')">3</button>
+            <button onclick="updateExpression('×')">×</buton>
+            <button onclick="updateExpression('0')">0</button>
+            <button onclick="clearExpression()">C</button>
+            <button onclick="calculateResult()">=</button>
+            <button onclick="updateExpression('÷')">÷</button>
+        </div>
+        </div>
+    </main>
+</body>
+</html>
